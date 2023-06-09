@@ -7,6 +7,39 @@
                 orange-->rgb(255, 82, 27);
                 blue-->rgb(15, 163, 177);      */
 
+@media screen and (max-width: 834px) {
+    nav {
+        display: none;
+        position: absolute;
+        transition: 3s ease;
+    }
+
+    nav:hover {
+        display: inline-block;
+        transition: 1s ease;
+    }
+
+    #catan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+body {
+
+    border-radius: 75px;
+    width: 50;
+    height: 50px;
+    box-shadow: none;
+}
+
+
 * {
     text-align: center;
 }
@@ -56,6 +89,10 @@ header {
     text-align: center
 }
 
+#ghosttext {
+    color: black;
+}
+
 #ghosttext:hover {
     animation-name: textmotion;
     animation-duration: 4s;
@@ -73,7 +110,7 @@ h1 {
     margin-bottom: -15px;
 }
 
-#logo {
+.logo {
     position: absolute;
     left: 10px;
     margin-top: 0.5%;
